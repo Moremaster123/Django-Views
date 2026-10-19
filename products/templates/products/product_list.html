@@ -11,6 +11,7 @@
         {% for product in products %}
             <li>
                 <a href="{% url 'product-detail' product.id %}">{{ product.title }}</a> - ${{ product.price }}
+                <br>Vendedor: {{ product.seller }} | Color: {{ product.color }}
             </li>
         {% empty %}
             <li>No hay productos todavía.</li>

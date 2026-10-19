@@ -3,7 +3,7 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 
 from .models import ProductModel
 
-CAMPOS = ["title", "price"]
+CAMPOS = ["title", "price", "description", "seller", "color", "product_dimensions"]
 
 
 class ProductListView(ListView):
